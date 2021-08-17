@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 226, 216);
+}
+
+.background-img {
+  background-image: url("./images/background-image.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-img h3 {
+  position: relative;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-family: cursive;
+  text-shadow: 5px 5px 5px red;
+  transition: 0.5s ease-in-out;
+  animation: move 5s infinite;
+}
+
+.aboutUs h3,
+h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: underline;
+}
+
+.aboutUs p {
+  font-size: 18px;
+  color: rgb(138, 13, 13);
+  padding: 10px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+    font-size: 50px;
+  }
+  to {
+    left: 20px;
+    font-size: 52px;
+  }
+}
+
+.background-img b {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #cacaca;
+  height: 40px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: rgb(138, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(138, 13, 13);
+  padding: 5px;
+  border: none;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.beer-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.beer-images img {
+  width: 320px;
+  height: auto;
+  margin: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .beer-images img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+}
+
+footer {
+  height: 100px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
